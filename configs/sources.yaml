@@ -1,0 +1,35 @@
+sources:
+  - name: OpenAI
+    url: https://openai.com/blog/rss.xml
+    kind: rss
+    weight: 1.2
+
+  - name: Anthropic
+    url: https://www.anthropic.com/rss.xml
+    kind: rss
+    weight: 1.1
+
+  - name: Google AI
+    url: https://blog.google/technology/ai/rss/
+    kind: rss
+    weight: 1.0
+
+  - name: Meta AI
+    url: https://ai.meta.com/blog/rss/
+    kind: rss
+    weight: 1.0
+
+  - name: Hugging Face
+    url: https://huggingface.co/blog/feed.xml
+    kind: rss
+    weight: 1.0
+
+  - name: Mistral AI
+    url: https://mistral.ai/feed.xml
+    kind: rss
+    weight: 1.0
+
+  - name: EU AI Act
+    url: https://artificialintelligenceact.eu/feed/
+    kind: rss
+    weight: 1.1
