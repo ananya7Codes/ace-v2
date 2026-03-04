@@ -1,0 +1,5 @@
+Extending single-minus amplitudes to gravitons
+
+A new preprint extends single-minus amplitudes to gravitons, with GPT-5.2 Pro helping derive and verify nonzero graviton tree amplitudes in quantum gravity.
+
+#AI #Tech
