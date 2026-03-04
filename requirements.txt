@@ -1,4 +1,5 @@
 feedparser
+requests
 pydantic-settings
 python-dotenv
 python-dateutil

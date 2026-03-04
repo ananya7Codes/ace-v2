@@ -35,12 +35,13 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add out/
+          DATE=$(date -u +'%Y-%m-%d')
+          git add -f out/
+          # If files are identical to last run, touch a marker so the commit still lands
           if git diff --cached --quiet; then
-            echo "No new tweets to commit."
-          else
-            DATE=$(date -u +'%Y-%m-%d')
-            TWEET=$(cat out/${DATE}/tweet_1.txt 2>/dev/null || echo "Weekly AI tweets: ${DATE}")
-            git commit -m "$TWEET"
-            git push
+            touch out/${DATE}/.updated
+            git add -f out/${DATE}/.updated
           fi
+          TWEET=$(cat out/${DATE}/tweet_1.txt 2>/dev/null || echo "Weekly AI tweets: ${DATE}")
+          git commit -m "$TWEET"
+          git push

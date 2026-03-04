@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -13,11 +14,16 @@ from typing import Dict, List, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import feedparser
+import requests
 import yaml
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
 from lib.db import get_db, init_db
+
+SCRAPE_TIMEOUT = 10       # seconds per article request
+SCRAPE_DELAY   = 0.3      # seconds between requests (be polite)
+MAX_TEXT_LEN   = 8000     # chars to store per article
 
 
 def load_sources() -> List[dict]:
@@ -49,6 +55,32 @@ def strip_html(html: str) -> str:
     if not html:
         return ""
     return BeautifulSoup(html, "html.parser").get_text(separator=" ", strip=True)
+
+
+def scrape_article(url: str) -> str:
+    """Fetch an article URL and extract the main body text."""
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (compatible; ACE-bot/1.0; +https://github.com/ananya7Codes/ace-v2)"}
+        resp = requests.get(url, timeout=SCRAPE_TIMEOUT, headers=headers)
+        if resp.status_code != 200:
+            return ""
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Remove noise elements
+        for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form", "figure"]):
+            tag.decompose()
+
+        # Try article → main → body, in order of specificity
+        container = soup.find("article") or soup.find("main") or soup.body
+        if not container:
+            return ""
+
+        paragraphs = container.find_all("p")
+        text = " ".join(p.get_text(separator=" ", strip=True) for p in paragraphs)
+        return text[:MAX_TEXT_LEN]
+    except Exception:
+        return ""
 
 
 def make_id(url: str) -> str:
@@ -85,12 +117,19 @@ def fetch_feed(source: dict, source_id: int, conn) -> int:
         author = getattr(entry, "author", "") or ""
         published = parse_date(entry)
 
-        # Extract text from summary/content
+        # Extract text from RSS content/summary first
         text = ""
         if hasattr(entry, "content") and entry.content:
             text = strip_html(entry.content[0].get("value", ""))
         elif hasattr(entry, "summary"):
             text = strip_html(entry.summary)
+
+        # If RSS gave us nothing useful, scrape the article URL
+        if len(text.strip()) < 100 and link:
+            scraped = scrape_article(link)
+            if scraped:
+                text = scraped
+            time.sleep(SCRAPE_DELAY)
 
         meta = json.dumps({"source_name": source["name"], "weight": source["weight"]})
 
