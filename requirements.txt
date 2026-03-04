@@ -8,3 +8,4 @@ scikit-learn
 numpy
 beautifulsoup4
 PyYAML
+anthropic
