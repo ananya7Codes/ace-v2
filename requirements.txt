@@ -6,6 +6,5 @@ rapidfuzz
 sentence-transformers
 scikit-learn
 numpy
-requests-oauthlib
 beautifulsoup4
 PyYAML

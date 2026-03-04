@@ -8,6 +8,8 @@ on:
 jobs:
   tweet:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -18,18 +20,24 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Configure env
-        run: |
-          echo "X_API_KEY=${{ secrets.X_API_KEY }}" >> $GITHUB_ENV
-          echo "X_API_SECRET=${{ secrets.X_API_SECRET }}" >> $GITHUB_ENV
-          echo "X_ACCESS_TOKEN=${{ secrets.X_ACCESS_TOKEN }}" >> $GITHUB_ENV
-          echo "X_ACCESS_TOKEN_SECRET=${{ secrets.X_ACCESS_TOKEN_SECRET }}" >> $GITHUB_ENV
-
       - name: Ingest RSS feeds
         run: python scripts/ingest.py
 
       - name: Process and rank stories
         run: python scripts/process.py
 
-      - name: Tweet top 5
+      - name: Generate tweet files
         run: python scripts/tweet.py
+
+      - name: Commit tweet files to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add out/
+          if git diff --cached --quiet; then
+            echo "No new tweets to commit."
+          else
+            DATE=$(date -u +'%Y-%m-%d')
+            git commit -m "tweets: $DATE"
+            git push
+          fi
