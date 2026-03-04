@@ -143,18 +143,19 @@ def save_stories(conn, stories: List[dict]) -> None:
     conn.execute("DELETE FROM stories")
 
     for story in stories:
-        # Build a summary from the text
         text = story.get("text", "") or ""
         summary = text[:200].rsplit(" ", 1)[0] if len(text) > 200 else text
 
         conn.execute(
-            """INSERT INTO stories (cluster_label, score, title, summary, created_at)
-               VALUES (?, ?, ?, ?, ?)""",
+            """INSERT INTO stories (cluster_label, score, title, url, summary, full_text, created_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?)""",
             (
                 story.get("cluster_label", 0),
                 story["score"],
                 story["title"],
+                story.get("url", ""),
                 summary,
+                text,
                 now,
             ),
         )

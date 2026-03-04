@@ -22,7 +22,7 @@ MODEL = "claude-haiku-4-5"
 
 def get_top_stories(conn, limit: int = 5) -> List[dict]:
     rows = conn.execute(
-        "SELECT title, summary, score FROM stories ORDER BY score DESC LIMIT ?",
+        "SELECT title, url, full_text, score FROM stories ORDER BY score DESC LIMIT ?",
         (limit,),
     ).fetchall()
     return [dict(r) for r in rows]
@@ -34,13 +34,13 @@ def generate_tweet_text(title: str, text: str, client: anthropic.Anthropic) -> s
 
 Rules:
 - Maximum 240 characters
-- Tell the actual news — be specific and informative
+- Tell the actual news — be specific and informative, not just the headline
 - Plain English, no jargon
 - No hashtags, no URLs
 - Return only the tweet text, nothing else
 
 Title: {title}
-Details: {text[:500]}"""
+Full story: {text[:3000]}"""
 
     response = client.messages.create(
         model=MODEL,
@@ -56,7 +56,7 @@ Details: {text[:500]}"""
 
 def format_tweet(story: dict, client: anthropic.Anthropic) -> str:
     title = story["title"] or "Untitled"
-    text = story["summary"] or ""
+    text = story["full_text"] or ""
 
     try:
         body = generate_tweet_text(title, text, client)

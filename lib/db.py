@@ -30,7 +30,9 @@ CREATE TABLE IF NOT EXISTS stories (
     cluster_label INTEGER,
     score REAL,
     title TEXT,
+    url TEXT,
     summary TEXT,
+    full_text TEXT,
     created_at TEXT
 );
 """
@@ -49,6 +51,12 @@ def get_db() -> sqlite3.Connection:
 def init_db() -> None:
     conn = get_db()
     conn.executescript(SCHEMA)
+    # Migrate existing DBs that predate url/full_text columns
+    for col, typ in [("url", "TEXT"), ("full_text", "TEXT")]:
+        try:
+            conn.execute(f"ALTER TABLE stories ADD COLUMN {col} {typ}")
+        except Exception:
+            pass  # Column already exists
     conn.commit()
     conn.close()
 
