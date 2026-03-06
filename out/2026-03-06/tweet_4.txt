@@ -1,0 +1,3 @@
+Hugging Face released Modular Diffusers, a new way to build AI image generation pipelines by mixing and matching reusable blocks instead of coding from scratch. You can swap components in and out, create custom blocks, and share them on th…
+
+#AI #Tech
