@@ -1,3 +1,3 @@
-The technique works by teaching models to recognize which instructions come from trusted sources and which ones might be attempts to hijack the system. It's like teaching someone to verify a boss's request before following orders from a stranger.
+This matters because bad actors often try to override a model's safety guidelines through clever prompt tricks. By improving how models rank which instructions to follow, this approach makes those attacks far less effective.
 
 #AI #Tech

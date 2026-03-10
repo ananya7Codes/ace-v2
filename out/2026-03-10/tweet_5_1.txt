@@ -1,3 +1,3 @@
-OpenAI and others are developing new training methods to help AI models better follow your instructions while ignoring conflicting commands. This matters because it makes AI systems safer and harder to trick into doing something they shouldn't.
+New training method helps AI models better follow the right instructions and ignore harmful ones. IH-Challenge teaches frontier language models to distinguish between trusted commands and potentially malicious prompts, making them safer and harder to trick.
 
 #AI #Tech

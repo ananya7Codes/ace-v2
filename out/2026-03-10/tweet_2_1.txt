@@ -1,3 +1,3 @@
-Google's Gemini AI can now handle complex spreadsheet tasks with near-expert accuracy. The new Sheets feature lets you describe what you need and it automatically creates, organizes and analyzes data—achieving a 70% success rate on real-world tasks.
+Google's AI can now handle complex spreadsheet tasks better than most competitors. Gemini in Sheets just hit a 70.48% success rate on real-world spreadsheet challenges, nearing what human experts achieve. You can simply describe what you need and let it creat…
 
 #AI #Tech
