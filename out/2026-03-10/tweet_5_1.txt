@@ -1,3 +1,3 @@
-New AI safety technique called IH-Challenge teaches language models to follow trusted instructions over untrusted ones. This helps prevent hackers from hijacking AI systems through tricky prompts, making the models safer and more reliable overall.
+OpenAI and others are developing new training methods to help AI models better follow your instructions while ignoring conflicting commands. This matters because it makes AI systems safer and harder to trick into doing something they shouldn't.
 
 #AI #Tech

@@ -1,3 +1,3 @@
-The key insight: synchronous training where you generate data then train on it sequentially wastes compute. Modern libraries decouple these steps so one GPU pool generates while another trains, massively improving efficiency at scale.
+The problem they're solving is real: GPUs sit idle 60% of the time in traditional training because the system waits for one phase to finish before starting the next. By running generation and learning in parallel, teams can actually use their expensive hardwa…
 
 #AI #Tech

@@ -1,3 +1,3 @@
-The training method works by deliberately giving conflicting instructions to AI models during practice, so they learn to prioritize what comes from trustworthy sources. It's like teaching someone to ignore a stranger's directions if they already have clear gu…
+The technique works by teaching models to recognize which instructions come from trusted sources and which ones might be attempts to hijack the system. It's like teaching someone to verify a boss's request before following orders from a stranger.
 
 #AI #Tech

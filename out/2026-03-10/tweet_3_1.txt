@@ -1,3 +1,3 @@
-Hugging Face just launched Storage Buckets, a new tool for storing the messy intermediate files that ML training produces—checkpoints, logs, processed data. Unlike Git, it's built for files that change constantly and don't need version history.
+Hugging Face just launched Storage Buckets, a new way to store the messy intermediate files that ML projects constantly generate—checkpoints, logs, processed data. Unlike version control, buckets let you overwrite files freely and sync directories efficiently.
 
 #AI #Tech
