@@ -1,0 +1,3 @@
+The clever part: Buckets use chunk-based storage that deduplicates across files. Upload similar datasets or successive model checkpoints? They share chunks instead of storing duplicates, cutting bandwidth, transfer time…
+
+#AI #Tech

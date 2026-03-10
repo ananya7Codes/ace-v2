@@ -1,0 +1,3 @@
+Think of it like this: if your AI assistant gets told two different things at once, it now knows to listen to the original instruction from you rather than sneaky injected commands hidden in user input. This is a big de…
+
+#AI #Tech

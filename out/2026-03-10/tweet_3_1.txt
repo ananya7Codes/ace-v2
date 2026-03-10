@@ -1,0 +1,4 @@
+Tweet 1:
+Researchers surveyed 16 open-source libraries to understand how they handle asynchronous training for AI models. The insight: most modern systems split inference and training onto separate GPU pools to keep bot…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+OpenAI and other AI labs just released a new training method called IH-Challenge that teaches AI models to follow instructions from trusted sources while ignoring conflicting ones. This makes AI systems safer and harder…
+
+#AI #Tech

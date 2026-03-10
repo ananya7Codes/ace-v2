@@ -1,0 +1,4 @@
+Tweet 2:
+The same async patterns work beyond reinforcement learning. Distillation tasks where a student model generates text and a teacher scores it use identical architecture—just swap the reward function for a teacher…
+
+#AI #Tech
