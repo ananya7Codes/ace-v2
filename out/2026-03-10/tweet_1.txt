@@ -1,3 +1,3 @@
-Google's Gemini AI can now handle complex spreadsheet tasks better than ever. Just describe what you need and it'll create, organize, and analyze data for you. It's hitting 70% success on real-world spreadsheet challenges, nearly matching …
+Google's Gemini AI can now handle complex spreadsheet tasks on its own. Just describe what you need—organize data, create sheets, run analysis—and it does the work. It's reaching near-expert human level performance.
 
 #AI #Tech
