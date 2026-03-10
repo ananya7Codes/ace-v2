@@ -42,6 +42,6 @@ jobs:
             touch out/${DATE}/.updated
             git add -f out/${DATE}/.updated
           fi
-          TWEET=$(cat out/${DATE}/tweet_1.txt 2>/dev/null || echo "Weekly AI tweets: ${DATE}")
+          TWEET=$(cat out/${DATE}/tweet_1_1.txt 2>/dev/null || echo "Weekly AI tweets: ${DATE}")
           git commit -m "$TWEET"
           git push

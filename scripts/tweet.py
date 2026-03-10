@@ -1,4 +1,4 @@
-"""Pick top 5 stories, generate coherent tweets via Claude, write to out/YYYY-MM-DD/."""
+"""Pick top 5 stories, generate 2-tweet threads via Claude, write to out/YYYY-MM-DD/."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -28,43 +28,54 @@ def get_top_stories(conn, limit: int = 5) -> List[dict]:
     return [dict(r) for r in rows]
 
 
-def generate_tweet_text(title: str, text: str, client: anthropic.Anthropic) -> str:
-    """Use Claude Haiku to write a coherent, informative tweet under 240 chars."""
-    prompt = f"""Write a tweet about this AI news story.
+def generate_tweet_thread(title: str, text: str, client: anthropic.Anthropic) -> Tuple[str, str]:
+    """Use Claude Haiku to write a 2-tweet thread. Returns (tweet1, tweet2)."""
+    prompt = f"""Write a 2-tweet thread about this AI news story.
 
 Rules:
-- Maximum 240 characters
-- Tell the actual news — be specific and informative, not just the headline
+- Tweet 1: The main news — what happened and why it matters (max 220 characters)
+- Tweet 2: A key detail, implication, or example that adds value (max 220 characters)
 - Plain English, no jargon
 - No hashtags, no URLs
-- Return only the tweet text, nothing else
+- Separate the two tweets with exactly "---" on its own line
+- Return only the two tweets, nothing else
 
 Title: {title}
 Full story: {text[:3000]}"""
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=100,
+        max_tokens=200,
         messages=[{"role": "user", "content": prompt}],
     )
-    tweet = response.content[0].text.strip()
+    raw = response.content[0].text.strip()
+    parts = [p.strip() for p in raw.split("---")]
+
+    tweet1 = parts[0] if parts else title
+    tweet2 = parts[1] if len(parts) > 1 else ""
+
     # Hard cap as safety net
-    if len(tweet) > 240:
-        tweet = tweet[:239] + "…"
-    return tweet
+    if len(tweet1) > 220:
+        tweet1 = tweet1[:219] + "…"
+    if len(tweet2) > 220:
+        tweet2 = tweet2[:219] + "…"
+
+    return tweet1, tweet2
 
 
-def format_tweet(story: dict, client: anthropic.Anthropic) -> str:
+def format_thread(story: dict, client: anthropic.Anthropic) -> Tuple[str, str]:
     title = story["title"] or "Untitled"
     text = story["full_text"] or ""
 
     try:
-        body = generate_tweet_text(title, text, client)
+        t1, t2 = generate_tweet_thread(title, text, client)
     except Exception as e:
         print(f"  Warning: Claude API failed ({e}), falling back to title only")
-        body = title
+        t1, t2 = title, ""
 
-    return twitter_truncate(f"{body}\n\n{HASHTAGS}", 280)
+    tweet1 = twitter_truncate(f"{t1}\n\n{HASHTAGS}", 280)
+    tweet2 = twitter_truncate(f"{t2}\n\n{HASHTAGS}", 280) if t2 else ""
+    return tweet1, tweet2
 
 
 def main():
@@ -84,23 +95,27 @@ def main():
         print("No stories found. Run ingest.py and process.py first.")
         return
 
-    tweets = []
+    threads = []
     for i, story in enumerate(stories, 1):
-        print(f"Generating tweet {i}/5: {story['title'][:60]}...")
-        tweets.append(format_tweet(story, client))
+        print(f"Generating thread {i}/5: {story['title'][:60]}...")
+        threads.append(format_thread(story, client))
 
     # Write to out/YYYY-MM-DD/
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     out_dir = Path(__file__).resolve().parent.parent / "out" / date_str
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    for i, tweet in enumerate(tweets, 1):
-        (out_dir / f"tweet_{i}.txt").write_text(tweet, encoding="utf-8")
+    for i, (t1, t2) in enumerate(threads, 1):
+        (out_dir / f"tweet_{i}_1.txt").write_text(t1, encoding="utf-8")
+        if t2:
+            (out_dir / f"tweet_{i}_2.txt").write_text(t2, encoding="utf-8")
 
-    print(f"\nWrote {len(tweets)} tweets to {out_dir}/\n")
-    for i, tweet in enumerate(tweets, 1):
-        print(f"--- Tweet {i} ({twitter_length(tweet)} chars) ---")
-        print(tweet)
+    print(f"\nWrote {len(threads)} threads to {out_dir}/\n")
+    for i, (t1, t2) in enumerate(threads, 1):
+        print(f"--- Story {i} ---")
+        print(f"  Tweet 1 ({twitter_length(t1)} chars): {t1}")
+        if t2:
+            print(f"  Tweet 2 ({twitter_length(t2)} chars): {t2}")
         print()
 
 
