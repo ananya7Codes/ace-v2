@@ -31,11 +31,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/tweet.py
 
-      - name: Post tweets to X via Buffer
+      - name: Post threads to X
         env:
-          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          BUFFER_X_PROFILE_ID: ${{ secrets.BUFFER_X_PROFILE_ID }}
-        run: python scripts/post_to_buffer.py
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python scripts/post_to_x.py
 
       - name: Commit tweet files to repo
         run: |
