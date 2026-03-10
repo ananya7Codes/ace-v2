@@ -1,0 +1,3 @@
+Hugging Face launched Storage Buckets for handling ML training files. Unlike their versioned model repos, Buckets are mutable object storage for checkpoints, logs, and intermediate files that change constantly. They're built on deduplicati…
+
+#AI #Tech

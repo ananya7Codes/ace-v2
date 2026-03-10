@@ -1,0 +1,3 @@
+Researchers analyzed 16 open-source reinforcement learning libraries to understand how they handle asynchronous training at scale. They found most separate inference from training on different GPUs to keep both running concurrently, preven…
+
+#AI #Tech
