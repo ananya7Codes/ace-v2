@@ -11,6 +11,8 @@ from typing import List, Tuple
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+import re
+
 import anthropic
 
 from lib.db import get_db, init_db
@@ -33,10 +35,11 @@ def generate_tweet_thread(title: str, text: str, client: anthropic.Anthropic) ->
     prompt = f"""Write a 2-tweet thread about this AI news story.
 
 Rules:
-- Tweet 1: The main news — what happened and why it matters (max 220 characters)
-- Tweet 2: A key detail, implication, or example that adds value (max 220 characters)
+- Tweet 1: The main news — what happened and why it matters (max 260 characters)
+- Tweet 2: A key detail, implication, or example that adds value (max 260 characters)
 - Plain English, no jargon
 - No hashtags, no URLs
+- Do NOT include labels like "Tweet 1:" or "Tweet 2:" — just the text
 - Separate the two tweets with exactly "---" on its own line
 - Return only the two tweets, nothing else
 
@@ -45,7 +48,7 @@ Full story: {text[:3000]}"""
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=200,
+        max_tokens=300,
         messages=[{"role": "user", "content": prompt}],
     )
     raw = response.content[0].text.strip()
@@ -54,11 +57,16 @@ Full story: {text[:3000]}"""
     tweet1 = parts[0] if parts else title
     tweet2 = parts[1] if len(parts) > 1 else ""
 
-    # Hard cap as safety net
-    if len(tweet1) > 220:
-        tweet1 = tweet1[:219] + "…"
-    if len(tweet2) > 220:
-        tweet2 = tweet2[:219] + "…"
+    # Strip any "Tweet N:" labels Claude may include despite instructions
+    label_re = re.compile(r"^tweet\s*\d+\s*:\s*", re.IGNORECASE)
+    tweet1 = label_re.sub("", tweet1).strip()
+    tweet2 = label_re.sub("", tweet2).strip()
+
+    # Hard cap as safety net (260 chars leaves room for \n\n#AI #Tech)
+    if len(tweet1) > 260:
+        tweet1 = tweet1[:259] + "…"
+    if len(tweet2) > 260:
+        tweet2 = tweet2[:259] + "…"
 
     return tweet1, tweet2
 
