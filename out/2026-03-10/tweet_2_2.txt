@@ -1,3 +1,3 @@
-The clever part: Storage Buckets use deduplication technology that automatically detects when files share common chunks. Upload similar datasets or successive model checkpoints? It only stores the differences, cutting bandwidth costs and transfer times signif…
+Instead of manually creating formulas or restructuring data, you can simply describe what you need in plain English and let Gemini do the work. It's launching as a beta feature across Sheets, Docs, Drive and Slides.
 
 #AI #Tech

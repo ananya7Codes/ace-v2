@@ -1,3 +1,3 @@
-Instead of memorizing that E=mc², you can now adjust the numbers yourself and watch what happens. This hands-on approach helps students actually understand why things work, not just memorize answers.
+The training method works by deliberately giving conflicting instructions to AI models during practice, so they learn to prioritize what comes from trustworthy sources. It's like teaching someone to ignore a stranger's directions if they already have clear gu…
 
 #AI #Tech

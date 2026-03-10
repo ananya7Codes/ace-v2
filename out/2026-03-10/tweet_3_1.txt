@@ -1,3 +1,3 @@
-Researchers analyzed 16 open-source libraries to understand how modern AI training works at scale. They found that keeping inference and training separate and running them at the same time—instead of waiting for one to finish before starting the other—is now …
+Hugging Face just launched Storage Buckets, a new tool for storing the messy intermediate files that ML training produces—checkpoints, logs, processed data. Unlike Git, it's built for files that change constantly and don't need version history.
 
 #AI #Tech

@@ -1,3 +1,3 @@
-ChatGPT just got better at teaching math and science. You can now interact with visual explanations, play with variables, and see how formulas actually work in real time instead of just reading about them.
+New AI safety technique called IH-Challenge teaches language models to follow trusted instructions over untrusted ones. This helps prevent hackers from hijacking AI systems through tricky prompts, making the models safer and more reliable overall.
 
 #AI #Tech
