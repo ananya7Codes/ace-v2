@@ -1,0 +1,3 @@
+The agent uses different strategies for different tasks: for exploratory analysis, it writes and runs Python code in notebooks. For specific questions, it pulls from structured tools like data retrievers and file detectors. It even uses AI vision to understan…
+
+#AI #Tech

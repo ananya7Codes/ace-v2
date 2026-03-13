@@ -1,0 +1,3 @@
+OpenAI is building defenses into AI agents to stop hackers from tricking them into ignoring safety rules. By limiting what agents can actually do and protecting sensitive information, they're making it harder for bad actors to exploit these systems through cl…
+
+#AI #Tech

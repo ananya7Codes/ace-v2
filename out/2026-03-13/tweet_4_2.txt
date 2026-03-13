@@ -1,0 +1,3 @@
+What makes this real: Codex doesn't just spot problems—it actually writes and deploys fixes automatically. For a massive company like Rakuten, shaving days off every repair means huge savings and happier customers who experience fewer outages.
+
+#AI #Tech

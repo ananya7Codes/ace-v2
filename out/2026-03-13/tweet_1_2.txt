@@ -1,0 +1,3 @@
+For example, an agent might refuse to delete files or share passwords no matter how a user phrases the request. It's like giving a security guard clear instructions that certain actions are off-limits, period.
+
+#AI #Tech

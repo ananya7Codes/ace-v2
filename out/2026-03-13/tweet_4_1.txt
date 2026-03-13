@@ -1,0 +1,3 @@
+Rakuten just cut their software repair time in half by using OpenAI's Codex AI to fix bugs faster. The system also automates code reviews and speeds up their entire development pipeline, letting them ship new features in weeks instead of months.
+
+#AI #Tech

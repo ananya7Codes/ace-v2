@@ -1,0 +1,3 @@
+Instead of manually sorting data or writing formulas, you could tell Gemini something like "reorganize this sales data by region and calculate monthly totals" and it handles the whole thing. This turns spreadsheets into a conversation rather than a technical …
+
+#AI #Tech

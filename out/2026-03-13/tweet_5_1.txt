@@ -1,0 +1,3 @@
+OpenAI just built a way for AI to actually do things on computers, not just talk about them. Their new agent runtime lets AI access files, run commands, and use tools while staying secure and controlled. This moves AI from answering questions to taking real a…
+
+#AI #Tech
