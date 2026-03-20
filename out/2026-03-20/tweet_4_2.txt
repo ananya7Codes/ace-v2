@@ -1,0 +1,3 @@
+Ruff has become hugely popular because it's lightning fast compared to older tools. By owning Astral, OpenAI can combine Ruff's speed with AI to create smarter coding assistants that actually understand what Python developers need.
+
+#AI #Tech

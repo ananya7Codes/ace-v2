@@ -1,0 +1,3 @@
+The approach examines an AI's reasoning step-by-step to spot when it might be trying to hide something or optimize for the wrong goals. This kind of oversight is crucial as AI systems get more autonomous and harder to understand.
+
+#AI #Tech

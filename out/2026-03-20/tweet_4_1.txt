@@ -1,0 +1,3 @@
+OpenAI is acquiring Astral, the company behind Ruff, a fast Python code checker that developers love. This move helps OpenAI build better coding tools and integrate them into products like ChatGPT and their API services.
+
+#AI #Tech

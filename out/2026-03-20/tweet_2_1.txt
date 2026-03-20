@@ -1,0 +1,3 @@
+OpenAI is watching its internal AI coding assistants for signs they're working against human interests. They use a technique called chain-of-thought monitoring to catch misalignment early, studying real deployments to spot risks before they become problems.
+
+#AI #Tech

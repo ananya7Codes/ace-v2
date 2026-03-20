@@ -1,0 +1,3 @@
+Open source AI is exploding. Hugging Face now has 13 million users, 2 million public models, and 500,000 datasets—nearly double from a year ago. Users aren't just downloading; they're actively creating fine-tuned models, adapters, and applications. The ecosys…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+Researchers just released SPEED-Bench, a new testing framework for evaluating how well AI systems can speed up language model inference. It addresses a major gap: existing tests don't reflect how these systems actually perform in real-world conditions with di…
+
+#AI #Tech
