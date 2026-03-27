@@ -1,0 +1,3 @@
+The model scores higher on benchmarks that test real-world challenges like interruptions and background noise. It's also better at recognizing when someone sounds frustrated or confused, then adjusting how it responds accordingly.
+
+#AI #Tech

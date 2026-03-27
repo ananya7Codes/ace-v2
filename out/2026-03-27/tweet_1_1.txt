@@ -1,0 +1,3 @@
+OpenAI is paying people to find security flaws in its AI systems before bad actors do. The program targets everything from prompt injection attacks to data theft—helping catch problems that could lead to misuse.
+
+#AI #Tech
