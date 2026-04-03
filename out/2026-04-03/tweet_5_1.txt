@@ -1,0 +1,3 @@
+A new AI model called Falcon Perception can understand images and text together to find and identify objects in photos. It's smaller and more efficient than similar systems, using a single unified design instead of multiple separate components cobbled togethe…
+
+#AI #Tech

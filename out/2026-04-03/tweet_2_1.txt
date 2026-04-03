@@ -1,0 +1,3 @@
+Google DeepMind released Gemma 4, a new family of AI models that can understand images, text, and audio all at once. They're free to use, work on regular devices, and perform at the level of much larger models.
+
+#AI #Tech

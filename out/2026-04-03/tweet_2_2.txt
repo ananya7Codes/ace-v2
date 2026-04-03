@@ -1,0 +1,3 @@
+The standout achievement: Gemma 4's 31-billion parameter model scores as well on benchmarks as competitors twice its size, while a smaller version uses just 4 billion active parameters but matches that performance.
+
+#AI #Tech

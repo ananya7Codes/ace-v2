@@ -1,0 +1,3 @@
+Holo3, a new AI system, can now perform computer tasks like a human worker, scoring 78.85% on industry benchmarks. It uses only a fraction of the computing power of larger AI models, making autonomous digital work more practical and affordable for businesses.
+
+#AI #Tech

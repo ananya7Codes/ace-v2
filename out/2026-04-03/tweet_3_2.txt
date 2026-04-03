@@ -1,0 +1,3 @@
+The system was trained on thousands of simulated workplace scenarios designed to teach it how to perceive screens and make decisions. It can handle unexpected situations and coordinate work across multiple applications simultaneously, mirroring how real emplo…
+
+#AI #Tech

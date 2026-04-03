@@ -1,0 +1,3 @@
+The model excels at following natural language instructions to locate and segment objects in images. It also includes a separate OCR component that reads text in images faster than other open-source options, showing the approach works across different percept…
+
+#AI #Tech
