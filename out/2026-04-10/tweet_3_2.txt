@@ -1,0 +1,3 @@
+Imagine searching for "a green car" and getting back matching photos, not just text descriptions. Or building a search system that understands when a video clip matches a written query. That's what these multimodal models make possible.
+
+#AI #Tech

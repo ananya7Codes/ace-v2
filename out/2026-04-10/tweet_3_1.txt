@@ -1,0 +1,3 @@
+Sentence Transformers just got a major upgrade. Version 5.4 now lets you search across text, images, audio, and video all at once using the same simple tool. This opens up new possibilities for finding information across different types of content.
+
+#AI #Tech

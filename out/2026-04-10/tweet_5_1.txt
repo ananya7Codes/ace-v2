@@ -1,0 +1,3 @@
+Safetensors, a file format that safely stores AI model weights without running code, is joining the PyTorch Foundation. It's now community-owned under the Linux Foundation instead of controlled by any single company, reflecting how widely adopted it's become …
+
+#AI #Tech

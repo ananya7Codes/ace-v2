@@ -1,0 +1,3 @@
+AI can now generate interactive 3D worlds in real-time on regular gaming computers. Waypoint-1.5 creates responsive, explorable environments at up to 720p and 60 FPS on consumer GPUs like RTX 3090-5090, moving world-building AI from expensive data centers to …
+
+#AI #Tech
