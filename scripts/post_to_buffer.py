@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Post this week's generated tweets to X via Buffer.
+"""Post this week's generated tweets to X via Buffer GraphQL API.
 
 Requires env vars:
-  BUFFER_API_KEY       — Buffer access token
-  BUFFER_X_PROFILE_ID — Buffer profile ID for your X account
+  BUFFER_API_KEY       — Buffer personal API key (Settings → API)
+  BUFFER_X_CHANNEL_ID — Buffer channel ID for your X account
 
 Connect your X account in Buffer first (buffer.com → Channels).
 """
@@ -14,8 +14,53 @@ import sys
 from pathlib import Path
 
 import requests
+from dotenv import load_dotenv
 
-API = "https://api.bufferapp.com/1"
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+
+API = "https://api.buffer.com/graphql"
+
+CREATE_POST = """
+mutation CreatePost($input: CreatePostInput!) {
+  createPost(input: $input) {
+    ... on PostActionSuccess {
+      post { id text }
+    }
+    ... on NotFoundError { message }
+    ... on UnauthorizedError { message }
+    ... on UnexpectedError { message }
+    ... on RestProxyError { message }
+    ... on LimitReachedError { message }
+    ... on InvalidInputError { message }
+  }
+}
+"""
+
+
+def post_to_buffer(channel_id: str, access_token: str, text: str) -> tuple[bool, str]:
+    r = requests.post(
+        API,
+        json={
+            "query": CREATE_POST,
+            "variables": {
+                "input": {
+                    "channelId": channel_id,
+                    "text": text,
+                    "schedulingType": "automatic",
+                    "mode": "shareNow",
+                }
+            },
+        },
+        headers={"Authorization": f"Bearer {access_token}"},
+        timeout=15,
+    )
+    data = r.json()
+    if r.status_code != 200:
+        return False, r.text
+    result = data.get("data", {}).get("createPost", {})
+    if "message" in result:
+        return False, result["message"]
+    return True, ""
 
 
 def get_latest_out_dir() -> Path:
@@ -27,56 +72,62 @@ def get_latest_out_dir() -> Path:
     return dirs[-1]
 
 
-def post_to_buffer(profile_id: str, access_token: str, text: str) -> tuple[int, str]:
-    r = requests.post(
-        f"{API}/updates/create.json",
-        data={
-            "access_token": access_token,
-            "profile_ids[]": profile_id,
-            "text": text,
-            "now": "true",
-        },
-        timeout=15,
-    )
-    return r.status_code, r.text
-
-
 def main():
-    access_token = os.environ.get("BUFFER_API_KEY")
-    profile_id = os.environ.get("BUFFER_X_PROFILE_ID")
+    import re
+    dry_run = "--dry-run" in sys.argv
 
-    if not access_token:
-        print("ERROR: BUFFER_API_KEY not set.")
-        sys.exit(1)
-    if not profile_id:
-        print("ERROR: BUFFER_X_PROFILE_ID not set.")
-        sys.exit(1)
+    access_token = os.environ.get("BUFFER_API_KEY")
+    channel_id = os.environ.get("BUFFER_X_CHANNEL_ID")
+
+    if not dry_run:
+        if not access_token:
+            print("ERROR: BUFFER_API_KEY not set.")
+            sys.exit(1)
+        if not channel_id:
+            print("ERROR: BUFFER_X_CHANNEL_ID not set.")
+            sys.exit(1)
 
     out_dir = get_latest_out_dir()
-    print(f"Posting tweets from {out_dir.name}/\n")
+    print(f"{'[DRY RUN] ' if dry_run else ''}Posting tweets from {out_dir.name}/\n")
 
-    # Collect tweet_N_1.txt and tweet_N_2.txt in order
+    # Only use tweet_N_M.txt format (skip bare tweet_N.txt duplicates)
     tweet_files = sorted(out_dir.glob("tweet_*_*.txt"))
     if not tweet_files:
         print("No tweet files found. Run tweet.py first.")
         sys.exit(1)
 
+    # Group by story number to know total tweets per story
+    stories: dict[str, list[Path]] = {}
+    for f in tweet_files:
+        m = re.match(r"tweet_(\d+)_(\d+)\.txt", f.name)
+        if m:
+            stories.setdefault(m.group(1), []).append(f)
+
     success = 0
-    for tweet_file in tweet_files:
-        text = tweet_file.read_text(encoding="utf-8").strip()
-        if not text:
-            continue
+    total = 0
+    for story_num, parts in sorted(stories.items()):
+        parts = sorted(parts)
+        total_parts = len(parts)
+        for idx, tweet_file in enumerate(parts, 1):
+            text = tweet_file.read_text(encoding="utf-8").strip()
+            if not text:
+                continue
+            if total_parts > 1:
+                text = f"{idx}/{total_parts} {text}"
+            total += 1
+            if dry_run:
+                print(f"[{tweet_file.name}]\n{text}\n({len(text)} chars)\n")
+                success += 1
+                continue
+            print(f"Posting {tweet_file.name} ({idx}/{total_parts})...")
+            ok, err = post_to_buffer(channel_id, access_token, text)
+            if ok:
+                print(f"  OK\n")
+                success += 1
+            else:
+                print(f"  FAILED: {err}\n")
 
-        print(f"Posting {tweet_file.name}...")
-        status, body = post_to_buffer(profile_id, access_token, text)
-
-        if status == 200:
-            print(f"  OK\n")
-            success += 1
-        else:
-            print(f"  FAILED ({status}): {body}\n")
-
-    print(f"Done: {success}/{len(tweet_files)} tweets posted.")
+    print(f"Done: {success}/{total} tweets {'previewed' if dry_run else 'posted'}.")
 
 
 if __name__ == "__main__":

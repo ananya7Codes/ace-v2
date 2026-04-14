@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Post this week's tweet threads directly to X via API v2.
+"""Post this week's top 5 tweets to X via Buffer API.
 
-Each story is posted as a proper 2-tweet thread:
-  tweet_N_1.txt  → posted first
-  tweet_N_2.txt  → posted as a reply to tweet_N_1
+Reads tweet_N_1.txt from the latest out/ directory and schedules
+each one to post now via Buffer. Requires your X profile connected
+in Buffer.
 
 Requires env vars:
-  X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
+  BUFFER_API_KEY, BUFFER_X_PROFILE_ID
 """
 from __future__ import annotations
 
@@ -15,16 +15,9 @@ import sys
 import time
 from pathlib import Path
 
-import tweepy
+import requests
 
-
-def get_client() -> tweepy.Client:
-    return tweepy.Client(
-        consumer_key=os.environ["X_API_KEY"],
-        consumer_secret=os.environ["X_API_SECRET"],
-        access_token=os.environ["X_ACCESS_TOKEN"],
-        access_token_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
-    )
+BUFFER_API = "https://api.bufferapp.com/1"
 
 
 def get_latest_out_dir() -> Path:
@@ -36,47 +29,49 @@ def get_latest_out_dir() -> Path:
     return dirs[-1]
 
 
-def post_thread(client: tweepy.Client, t1: str, t2: str, label: str):
-    """Post t1, then t2 as a reply to form a thread."""
-    resp = client.create_tweet(text=t1)
-    tweet_id = resp.data["id"]
-    print(f"  {label} tweet 1 posted (id={tweet_id})")
-
-    if t2:
-        time.sleep(2)  # brief pause between thread tweets
-        client.create_tweet(text=t2, in_reply_to_tweet_id=tweet_id)
-        print(f"  {label} tweet 2 posted as reply")
+def post_to_buffer(profile_id: str, api_key: str, text: str) -> bool:
+    resp = requests.post(
+        f"{BUFFER_API}/updates/create.json",
+        data={
+            "access_token": api_key,
+            "profile_ids[]": profile_id,
+            "text": text,
+            "now": "true",
+        },
+    )
+    if resp.status_code == 200:
+        return True
+    print(f"  Buffer error {resp.status_code}: {resp.text}")
+    return False
 
 
 def main():
-    for key in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"):
-        if not os.environ.get(key):
-            print(f"ERROR: {key} not set.")
-            sys.exit(1)
+    api_key = os.environ.get("BUFFER_API_KEY")
+    profile_id = os.environ.get("BUFFER_X_PROFILE_ID")
 
-    client = get_client()
+    if not api_key or not profile_id:
+        print("ERROR: BUFFER_API_KEY and BUFFER_X_PROFILE_ID must be set.")
+        sys.exit(1)
+
     out_dir = get_latest_out_dir()
-    print(f"Posting threads from {out_dir.name}/\n")
+    print(f"Posting tweets from {out_dir.name}/\n")
 
     success = 0
     for i in range(1, 6):
-        t1_file = out_dir / f"tweet_{i}_1.txt"
-        t2_file = out_dir / f"tweet_{i}_2.txt"
-
-        if not t1_file.exists():
+        tweet_file = out_dir / f"tweet_{i}_1.txt"
+        if not tweet_file.exists():
             continue
 
-        t1 = t1_file.read_text(encoding="utf-8").strip()
-        t2 = t2_file.read_text(encoding="utf-8").strip() if t2_file.exists() else ""
-
-        try:
-            post_thread(client, t1, t2, label=f"Story {i}")
+        text = tweet_file.read_text(encoding="utf-8").strip()
+        if post_to_buffer(profile_id, api_key, text):
+            print(f"  Story {i} posted ({len(text)} chars)")
             success += 1
-            time.sleep(3)  # pause between stories
-        except Exception as e:
-            print(f"  Story {i} FAILED: {e}")
+        else:
+            print(f"  Story {i} FAILED")
 
-    print(f"\nDone: {success}/5 threads posted.")
+        time.sleep(2)  # be polite to Buffer API
+
+    print(f"\nDone: {success}/5 tweets posted.")
 
 
 if __name__ == "__main__":

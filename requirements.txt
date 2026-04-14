@@ -10,4 +10,3 @@ numpy
 beautifulsoup4
 PyYAML
 anthropic
-tweepy
