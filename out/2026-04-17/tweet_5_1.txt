@@ -1,0 +1,3 @@
+Transformers library maintainers are drowning in AI-generated pull requests from code agents. Most don't understand the library's design philosophy—that code should read like human communication, not follow generic "best practices." A tiny team still has to r…
+
+#AI #Tech

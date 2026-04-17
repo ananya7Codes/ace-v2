@@ -1,0 +1,5 @@
+OpenAI just upgraded its Agents SDK with built-in sandbox execution, making it safer and easier for developers to build AI agents that can work with files and tools over long periods without breaking down.
+
+The update includes a model-native harness, meaning …
+
+#AI #Tech

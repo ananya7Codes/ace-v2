@@ -1,0 +1,3 @@
+OpenAI just released GPT-Rosalind, an AI model designed specifically for life sciences work. It's built to speed up drug discovery, genetic analysis, and protein research — areas where human scientists need powerful tools to solve complex problems faster.
+
+#AI #Tech

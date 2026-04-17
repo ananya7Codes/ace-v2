@@ -1,0 +1,3 @@
+Codex just got a major upgrade. The developer tool now lets you browse the web, generate images, and use computer automation—all built in. This means developers can automate complex tasks without leaving the app.
+
+#AI #Tech
