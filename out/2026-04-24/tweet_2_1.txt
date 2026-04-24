@@ -1,0 +1,3 @@
+OpenAI's Codex can now handle 10 new workplace tasks—from automating repetitive work to generating documents and connecting different tools together. It's turning how we work by letting AI handle the grunt work so teams can focus on strategy.
+
+#AI #Tech

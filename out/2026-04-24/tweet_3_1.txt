@@ -1,0 +1,3 @@
+OpenAI's Codex workspace is now open to users. It lets you organize coding projects, manage files, and complete tasks with built-in guidance. Think of it as a collaborative space where you can work alongside AI on actual coding work.
+
+#AI #Tech

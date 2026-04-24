@@ -1,0 +1,3 @@
+For example, you could schedule a daily report to run every morning at 9am, or set a trigger that automatically creates a summary whenever new data arrives. It saves hours every week and cuts down on human error.
+
+#AI #Tech

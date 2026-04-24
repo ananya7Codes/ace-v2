@@ -1,0 +1,3 @@
+One example: Codex can read data from a spreadsheet, write code to analyze it, then automatically create a formatted report. What used to take hours of manual work now happens in minutes.
+
+#AI #Tech

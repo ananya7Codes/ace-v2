@@ -1,0 +1,3 @@
+OpenAI's Codex now lets you customize how it works for your specific needs. You can adjust detail levels, set permissions, and personalize settings so the AI coding assistant fits your workflow instead of the other way around.
+
+#AI #Tech

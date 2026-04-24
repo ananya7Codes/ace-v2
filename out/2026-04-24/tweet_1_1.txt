@@ -1,0 +1,3 @@
+Codex now lets you automate repetitive tasks using schedules and triggers. Set it up once and it runs on its own—perfect for generating reports, creating summaries, or managing workflows without you having to do the work manually each time.
+
+#AI #Tech
