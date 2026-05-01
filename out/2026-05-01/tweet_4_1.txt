@@ -1,0 +1,3 @@
+NVIDIA released Nemotron 3 Nano Omni, a new AI model that can understand documents, audio, and video all at once. It's designed to handle complex real-world tasks like reading 100+ page contracts, transcribing messy audio, and analyzing videos with narration …
+
+#AI #Tech

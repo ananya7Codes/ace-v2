@@ -1,0 +1,3 @@
+The model works up to 9 times more efficiently than similar AI systems on video tasks. It's built for practical enterprise work: analyzing documents with tables and formulas, understanding speech across different accents and backgrounds, and automating workfl…
+
+#AI #Tech

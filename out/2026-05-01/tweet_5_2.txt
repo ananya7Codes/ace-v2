@@ -1,0 +1,3 @@
+The phishing-resistant feature uses your phone or security key to verify it's really you logging in, making it nearly impossible for scammers to trick their way into your account even if they steal your password.
+
+#AI #Tech

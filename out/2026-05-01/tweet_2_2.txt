@@ -1,0 +1,3 @@
+DeepSeek V4, Kimi-K2.6, and other popular open-source language models are already available through DeepInfra. If you have a Hugging Face PRO subscription, you get $2 in monthly credits to use across different providers with no extra markups.
+
+#AI #Tech

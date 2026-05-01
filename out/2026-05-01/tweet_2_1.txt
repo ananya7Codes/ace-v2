@@ -1,0 +1,3 @@
+DeepInfra is now an official way to run AI models on Hugging Face. This serverless platform offers cheap pricing and over 100 models, from language AIs to image and video generators. You can access it directly from Hugging Face's website or through their Pyth…
+
+#AI #Tech

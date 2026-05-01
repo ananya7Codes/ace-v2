@@ -1,0 +1,3 @@
+The key insight: they trained on 15 trillion tokens but obsessed over quality at each step, progressively filtering toward better data. They even extended the context window to 512K tokens, letting the model handle much longer documents than before.
+
+#AI #Tech
