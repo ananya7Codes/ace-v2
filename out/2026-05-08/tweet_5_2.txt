@@ -1,0 +1,3 @@
+The model trained in 5 minutes on an AMD MI300X with 192GB of memory, meaning no quantization tricks required. It answers medical exam questions and explains its reasoning, handling the kind of high-stakes task where wrong answers aren't just errors—they're d…
+
+#AI #Tech

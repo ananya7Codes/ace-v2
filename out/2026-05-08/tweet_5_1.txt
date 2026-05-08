@@ -1,0 +1,3 @@
+Most medical AI work assumes you need NVIDIA GPUs. A new project proves that wrong by fine-tuning a clinical question-answering model entirely on AMD hardware using ROCm. Same training code, no CUDA needed—just three environment variables.
+
+#AI #Tech

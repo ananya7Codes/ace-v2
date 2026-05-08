@@ -1,0 +1,3 @@
+Simplex is using advanced AI tools to speed up how software gets built. By combining ChatGPT Enterprise with their Codex system, they're cutting down the time spent on design, building, and testing—letting teams work faster and smarter.
+
+#AI #Tech

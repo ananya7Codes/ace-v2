@@ -1,0 +1,3 @@
+The feature works by detecting warning signs in conversations, then sending a message to your trusted contact with resources and context. It's designed to get help to people faster during critical moments when they might not reach out themselves.
+
+#AI #Tech
