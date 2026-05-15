@@ -1,0 +1,3 @@
+AI companies are fixing a hidden performance problem in language model servers: the CPU and GPU take turns instead of working together. By letting them run in parallel, they can cut wasted idle time and dramatically speed up inference while saving money on ex…
+
+#AI #Tech

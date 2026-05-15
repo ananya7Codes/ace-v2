@@ -1,0 +1,3 @@
+This matters because AI sometimes misses warning signs when problems build gradually. With better context awareness, ChatGPT can catch concerning patterns instead of treating each message in isolation.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+One concrete example: developers are using AI to generate code snippets and catch bugs automatically, which means less time spent on repetitive work. This approach is also helping less experienced engineers level up by learning from AI-assisted code reviews a…
+
+#AI #Tech

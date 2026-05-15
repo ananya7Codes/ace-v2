@@ -1,0 +1,3 @@
+The attack highlights a growing threat: hackers targeting widely-used software libraries to reach thousands of companies at once. OpenAI's response shows how serious these breaches are and why keeping your apps updated matters more than ever.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+OpenAI updated ChatGPT to better understand context in sensitive conversations. The AI can now track what's happened across a discussion to spot potential harms earlier and respond more carefully, making it safer overall.
+
+#AI #Tech
