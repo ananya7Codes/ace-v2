@@ -1,0 +1,3 @@
+AdventHealth is now using OpenAI's ChatGPT to cut through paperwork and admin tasks, freeing up doctors and nurses to spend more time with patients. This shift toward whole-person care could improve both patient experience and staff burnout.
+
+#AI #Tech

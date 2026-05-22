@@ -1,0 +1,3 @@
+Companies can now run these AI coding assistants wherever their data lives—whether that's on-site servers, private clouds, or a mix of both. This solves a major concern for industries like finance and healthcare that can't risk sending code to public internet…
+
+#AI #Tech

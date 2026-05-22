@@ -1,0 +1,3 @@
+OpenAI and Dell are teaming up to let companies use AI coding tools on their own servers instead of in the cloud. This means businesses can keep sensitive code and data private while still getting help from AI to write software faster.
+
+#AI #Tech
