@@ -1,0 +1,3 @@
+PyTorch just released a beginner-friendly guide to profiling your code. Profiling helps you find bottlenecks in training and inference so you can actually speed things up. It sounds intimidating but this series walks you through it step by step.
+
+#AI #Tech

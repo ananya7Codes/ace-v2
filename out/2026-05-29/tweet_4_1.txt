@@ -1,0 +1,3 @@
+Warp is betting big on AI to make coding easier by using OpenAI's latest model to help manage different coding tools and workflows all in one place. This could change how developers work across their computers and cloud services.
+
+#AI #Tech

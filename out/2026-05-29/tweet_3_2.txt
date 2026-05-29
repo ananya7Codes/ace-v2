@@ -1,0 +1,3 @@
+The agent uses AI code writing to understand tax rules and catch deductions humans might miss. Each time it handles a return, it learns what worked—creating a system that improves itself without constant human tweaking.
+
+#AI #Tech

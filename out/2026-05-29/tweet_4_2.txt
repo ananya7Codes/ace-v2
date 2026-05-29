@@ -1,0 +1,3 @@
+Instead of jumping between different apps, developers can now use AI agents that understand their whole setup—local files, cloud projects, and open source code—and coordinate everything automatically.
+
+#AI #Tech

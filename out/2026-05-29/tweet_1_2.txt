@@ -1,0 +1,3 @@
+The move shows how powerful AI tools can be restricted to trusted users for sensitive work. Instead of making this AI freely available, OpenAI is carefully controlling who can use it to prevent misuse while still advancing critical health security research.
+
+#AI #Tech

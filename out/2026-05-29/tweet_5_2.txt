@@ -1,0 +1,3 @@
+The guide starts with a simple example: matrix multiplication and addition. By learning to read profiler traces—those colored rectangles showing what your GPU is doing—you'll understand why your code runs slower than expected and how to fix it.
+
+#AI #Tech
