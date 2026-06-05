@@ -1,0 +1,3 @@
+OpenAI just upgraded GPT-Rosalind to better understand biology, chemistry, and genetics. This matters because scientists can now get smarter help analyzing complex experiments and research data faster than before.
+
+#AI #Tech

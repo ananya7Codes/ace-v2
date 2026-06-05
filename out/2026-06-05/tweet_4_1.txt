@@ -1,0 +1,3 @@
+NVIDIA released Nemotron 3.5, a new AI safety tool that checks text and images together in 12 languages. It's designed to catch harmful content across different industries—from healthcare to education—with customizable safety rules for each business.
+
+#AI #Tech

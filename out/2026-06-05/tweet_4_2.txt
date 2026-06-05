@@ -1,0 +1,3 @@
+The model can explain its safety decisions step-by-step, making it auditable and trustworthy for enterprises. It also works reasonably well in 140+ languages even without specific training, using knowledge transferred from a broader language model.
+
+#AI #Tech
