@@ -1,0 +1,3 @@
+PyTorch's nn.Linear layer is more efficient than you might think. It uses a single fused kernel that combines matrix multiplication and bias addition, rather than running them as separate operations. This "epilogue" technique reduces overhead and speeds up tr…
+
+#AI #Tech

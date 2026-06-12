@@ -1,0 +1,3 @@
+OpenAI is buying Ona, a company that builds secure cloud environments. This lets OpenAI's AI coding tools run longer and handle complex work tasks that need to stay running over time, not just quick interactions.
+
+#AI #Tech

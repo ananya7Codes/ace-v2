@@ -1,0 +1,3 @@
+When PyTorch transposes weights in nn.Linear, it doesn't actually move any data around. It just rewrites metadata about the tensor's shape and stride on the CPU, which is nearly free. The real work happens in one optimized GPU kernel that does everything at o…
+
+#AI #Tech
