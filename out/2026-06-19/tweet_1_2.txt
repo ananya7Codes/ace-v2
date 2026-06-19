@@ -1,0 +1,3 @@
+Teams can track usage by department, see which features get used most, and get alerts when spending approaches their set budgets. It's like giving finance teams real visibility into their AI spending.
+
+#AI #Tech

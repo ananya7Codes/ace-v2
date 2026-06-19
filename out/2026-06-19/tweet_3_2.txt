@@ -1,0 +1,3 @@
+When they optimized the library's design with better docs and examples, agents used 1.3 to 6 times fewer tokens to complete the same tasks. It's a reminder that as AI does more of the coding work, the tools themselves need to change too.
+
+#AI #Tech

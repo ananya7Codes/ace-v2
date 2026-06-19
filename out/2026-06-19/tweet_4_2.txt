@@ -1,0 +1,3 @@
+The team also published MolmoMotion-1M, a dataset of 1.16 million videos with 3D motion trajectories paired with action descriptions. They're sharing everything openly, giving the community tools to build robots that understand physics and video systems that …
+
+#AI #Tech

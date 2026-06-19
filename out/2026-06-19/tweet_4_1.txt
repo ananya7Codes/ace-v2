@@ -1,0 +1,3 @@
+AI researchers just released MolmoMotion, a model that predicts how objects will move in 3D space based on video frames and written instructions. This matters because robots and video generators need to anticipate future motion to plan actions and create real…
+
+#AI #Tech

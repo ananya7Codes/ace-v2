@@ -1,0 +1,3 @@
+AI agents are increasingly writing code to solve tasks, so libraries need to be optimized for how agents use them, not just how humans do. Researchers benchmarked open AI models on the transformers library to measure not just correctness, but efficiency—how m…
+
+#AI #Tech

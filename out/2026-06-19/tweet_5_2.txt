@@ -1,0 +1,3 @@
+AMIE uses AI to track symptoms across multiple appointments, adjust medications, and stay current with changing medical guidelines. Doctors could eventually spend less time on paperwork and more time actually talking with patients.
+
+#AI #Tech
