@@ -1,0 +1,3 @@
+NVIDIA released NeMo AutoModel, a new tool that makes training large AI models with a specialized architecture called Mixture-of-Experts much faster. It works with HuggingFace's popular Transformers library and delivers 3.4x faster training while using 30% le…
+
+#AI #Tech

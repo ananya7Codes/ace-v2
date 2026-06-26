@@ -1,0 +1,3 @@
+Speech recognition works great in quiet rooms with a microphone close by. But real-world voice assistants operate in messy environments: echoing conference rooms, noisy kitchens, cars with road noise. A new benchmark called FFASR is the first to properly meas…
+
+#AI #Tech

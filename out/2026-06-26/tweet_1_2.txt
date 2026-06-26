@@ -1,0 +1,3 @@
+Once it's running, query it like you would ChatGPT's API. Your laptop, notebooks, anywhere—just pass your HF token. Stop when you're done to save money. An A10 GPU costs $1.50/hour, and bigger models can shard across multiple GPUs automatically.
+
+#AI #Tech

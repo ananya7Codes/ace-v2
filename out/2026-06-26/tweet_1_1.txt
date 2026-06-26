@@ -1,0 +1,3 @@
+Hugging Face just made it dead simple to run your own AI model server. One command spins up a private, OpenAI-compatible endpoint on their infrastructure—no DevOps needed, you pay by the second. Perfect for testing, evaluation, or batch work without managing …
+
+#AI #Tech
