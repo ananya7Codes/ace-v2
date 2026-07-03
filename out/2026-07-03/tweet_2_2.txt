@@ -1,0 +1,3 @@
+Gemma 4 12B, a new AI model, now runs directly on your laptop with just 16GB of memory and can see, reason and take action across your devices—all while keeping your work private and fast.
+
+#AI #Tech

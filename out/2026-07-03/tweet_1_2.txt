@@ -1,0 +1,3 @@
+The benchmark has 10 case studies ranging from analyzing tumor genetics for drug treatment decisions to figuring out whether genes actually cause disease or if it's something nearby. AI systems are graded on reasoning quality, not just numerical accuracy.
+
+#AI #Tech

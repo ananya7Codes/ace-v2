@@ -1,0 +1,3 @@
+OpenAI and partners just released GeneBench-Pro, a new benchmark for testing AI systems on complex genomics research tasks. It includes real experimental data and requires sophisticated analysis—not just pattern matching—to get right.
+
+#AI #Tech
