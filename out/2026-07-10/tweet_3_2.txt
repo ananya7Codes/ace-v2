@@ -1,0 +1,3 @@
+The attention operation breaks down into basic steps like matrix multiplication and masking. When profiled, engineers discovered unexpected memory copies happening during masking operations, showing how profiler traces expose hidden inefficiencies that aren't…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+Instead of bolting AI onto existing systems, MUFG is designing workflows from the ground up with AI in mind. Think faster loan approvals, better fraud detection, and personalized financial advice—all powered by AI working alongside human bankers.
+
+#AI #Tech

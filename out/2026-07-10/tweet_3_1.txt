@@ -1,0 +1,3 @@
+Researchers are diving into how to profile PyTorch's attention mechanism, the core of transformer AI models. By using profiler traces, they're uncovering which operations are fast and which are slow, revealing optimization opportunities that could make these …
+
+#AI #Tech
