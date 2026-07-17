@@ -1,0 +1,3 @@
+Companies are shifting how they measure AI success. Instead of just counting AI projects, they're now tracking how much useful work each AI system produces per dollar spent. This matters because AI costs are rising fast.
+
+#AI #Tech

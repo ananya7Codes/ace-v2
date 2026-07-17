@@ -1,0 +1,3 @@
+NVIDIA released Nemotron 3 Embed, a new set of AI models designed to help computer agents find the right information faster. The top model ranks first on industry benchmarks for retrieval quality, which matters because better information retrieval means agent…
+
+#AI #Tech
