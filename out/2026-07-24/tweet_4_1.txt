@@ -1,0 +1,3 @@
+Diffusion models that create images are now much cheaper to run. A new quantization technique called Nunchaku compresses these massive models down to 4-bit precision, cutting memory needs from 24GB to 12GB while actually making inference faster instead of slo…
+
+#AI #Tech

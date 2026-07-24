@@ -1,0 +1,3 @@
+This works for things like tracking symptoms, understanding test results, or getting context about medications. OpenAI says your health data stays private and encrypted, but it's a major shift in what AI assistants can access about your personal life.
+
+#AI #Tech

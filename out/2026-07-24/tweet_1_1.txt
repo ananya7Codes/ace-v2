@@ -1,0 +1,3 @@
+ChatGPT can now access your medical records and Apple Health data if you're a U.S. user. The AI uses this info to give you personalized health insights, making it easier to understand your medical history without switching between apps.
+
+#AI #Tech
