@@ -1,0 +1,3 @@
+The platform solves a huge problem: most organizations fighting climate change lack the engineering teams to fine-tune AI models and run them at scale. Now NGOs and governments can go from raw satellite data to actionable wildfire risk maps and forest monitor…
+
+#AI #Tech

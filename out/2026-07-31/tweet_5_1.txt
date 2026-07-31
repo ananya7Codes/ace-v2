@@ -1,0 +1,3 @@
+AI2 just released OlmoEarth Platform, a system for running satellite AI models across entire continents. It processes massive amounts of satellite imagery to monitor deforestation, food security, and wildfires—analyzing dozens of terabytes daily at a fraction…
+
+#AI #Tech
