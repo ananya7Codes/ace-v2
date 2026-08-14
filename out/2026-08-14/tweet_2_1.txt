@@ -1,0 +1,3 @@
+Over 1,200 AI coding agents spent three weeks trying to reproduce papers from a major machine learning conference. They successfully verified claims in about half the papers, but found problems in others—revealing a big gap between what gets published and wha…
+
+#AI #Tech

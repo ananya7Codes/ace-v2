@@ -1,0 +1,3 @@
+Researchers at Allen Institute just released a tool that turns satellite images into searchable data patterns. OlmoEarth Studio now lets anyone export "embeddings"—compact numerical fingerprints of Earth observation data—for tasks like finding similar landsca…
+
+#AI #Tech

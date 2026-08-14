@@ -1,0 +1,3 @@
+The embeddings are lightweight, shareable files that capture what makes different places on Earth similar or different. You can generate monthly snapshots to track seasonal changes, or customize by location, time range, and imagery source through a simple int…
+
+#AI #Tech

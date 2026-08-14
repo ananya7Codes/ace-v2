@@ -1,0 +1,3 @@
+The model works on everything from phones to laptops. On an iPhone it processes 20 tokens per second, while on a Mac it hits 228 tokens per second. It also excels at reading what's on your screen and understanding documents without slowing down.
+
+#AI #Tech

@@ -1,0 +1,5 @@
+OpenAI and AWS just made Daybreak, a new AI model built for cybersecurity, available to businesses through Amazon Bedrock. This lets enterprise security teams use advanced AI to spot threats and respond faster without building their own systems.
+
+Daybreak can…
+
+#AI #Tech

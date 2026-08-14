@@ -1,0 +1,3 @@
+Instead of using the most powerful model for every job, builders can now match simpler, cheaper models to basic tasks. This cuts costs significantly while keeping quality high where it actually matters most.
+
+#AI #Tech
