@@ -1,0 +1,3 @@
+Researchers just released faster versions of three AI models that run up to 3.2x quicker without losing quality. They use a clever trick called speculative decoding where a smaller draft model suggests tokens and a larger model verifies them all at once, shar…
+
+#AI #Tech

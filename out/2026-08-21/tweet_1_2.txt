@@ -1,0 +1,3 @@
+Instead of writing code line by line, their developers used ChatGPT to generate chunks of code and handle repetitive tasks. This freed them up to focus on the hard creative problems that only humans can solve well.
+
+#AI #Tech

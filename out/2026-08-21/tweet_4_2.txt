@@ -1,0 +1,3 @@
+The speedup is especially useful for running AI locally. On a MacBook Pro, the 2.6B model now hits 140 tokens per second, making responses feel as snappy as many cloud AI services while keeping everything on your device.
+
+#AI #Tech
