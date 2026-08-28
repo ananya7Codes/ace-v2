@@ -1,0 +1,3 @@
+A researcher finetuned one of these models on medical documents in just 14.5 hours using a single GPU, and it outperformed every standard search method tested. This shows how tailoring AI retrieval to your specific field—legal, medical, code—dramatically impr…
+
+#AI #Tech

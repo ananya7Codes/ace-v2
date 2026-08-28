@@ -1,0 +1,3 @@
+Sentence Transformers now lets you train multi-vector AI models that search through text more precisely. Instead of squashing entire documents into single summaries, these models match individual words between queries and documents, catching nuances that gene…
+
+#AI #Tech
