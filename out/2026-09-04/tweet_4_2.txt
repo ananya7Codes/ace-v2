@@ -1,0 +1,3 @@
+funes works locally with no ML dependencies, automatically indexes each completed coding task, and lets agents retrieve the exact reasoning and code changes from past sessions with timestamps and full context included.
+
+#AI #Tech

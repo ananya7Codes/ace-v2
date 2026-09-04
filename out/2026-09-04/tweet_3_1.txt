@@ -1,0 +1,3 @@
+Researchers just built NeoMME, a new AI model that can understand both images and text together using a single system instead of separate components. It's smaller and faster than previous models while being just as accurate at finding information in documents.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+A language model just learned to paint watercolors by writing code. Instead of generating images directly, it writes JavaScript programs that control digital brushes, creating loose, imperfect paintings that feel genuinely artistic. The video went viral with …
+
+#AI #Tech

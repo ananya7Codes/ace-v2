@@ -1,0 +1,3 @@
+Coding agents forget everything when a session ends, losing the reasoning behind your past decisions. A new tool called funes creates a searchable memory layer that agents can access on their own, letting them learn from what you've already tried and why.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+The clever part: NeoMME compresses document indexes down to 6 kilobytes per page instead of 1.5 megabytes, making it practical to deploy at scale. One smaller version can process 51 pages per second on standard hardware.
+
+#AI #Tech

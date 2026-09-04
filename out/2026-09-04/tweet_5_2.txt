@@ -1,0 +1,3 @@
+What makes this special: you can read and edit the code the model writes, seeing exactly why each brushstroke happens. This lets artists explore and tweak the AI's creative decisions in ways text-to-image models never allowed before.
+
+#AI #Tech
