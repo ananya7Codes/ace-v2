@@ -1,0 +1,3 @@
+OpenAI just released the Agents API, a new tool that lets developers build and run AI agents in the cloud without managing the infrastructure themselves. This matters because it's way easier to create AI assistants that can take actions on your behalf.
+
+#AI #Tech

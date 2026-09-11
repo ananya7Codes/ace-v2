@@ -1,0 +1,3 @@
+OpenAI's Gradio platform just recreated AUTOMATIC1111's entire Stable Diffusion interface as a single workflow canvas. Workflow1111 uses 73 connected nodes to deliver text-to-image, image editing, upscaling, and video generation—all in one place you can custo…
+
+#AI #Tech

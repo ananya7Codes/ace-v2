@@ -1,0 +1,3 @@
+The breakthrough: instead of building custom plugins, everything uses the same four basic building blocks—Python functions, AI models, other Spaces, and datasets. That means an LLM and an image generator sit side-by-side as equals on the canvas, making it eas…
+
+#AI #Tech

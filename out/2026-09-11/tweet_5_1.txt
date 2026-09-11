@@ -1,0 +1,3 @@
+IBM released Granite Time Series PatchTST-FM-r2, a powerful forecasting model that works right out of the box without needing custom training. It's the best performer available under a commercial-friendly open license, making AI forecasting accessible to busi…
+
+#AI #Tech

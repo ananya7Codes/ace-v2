@@ -1,0 +1,3 @@
+The model can predict trends in data it's never seen before, handle missing values, and give probability estimates alongside forecasts. All the code and weights are freely available, so companies can start using it immediately in production applications.
+
+#AI #Tech
