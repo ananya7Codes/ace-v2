@@ -1,0 +1,3 @@
+OpenAI just launched Astra for Law, an AI tool built specifically for law firms. It combines advanced AI with custom workflows and strict security controls designed to handle sensitive client information safely and securely.
+
+#AI #Tech

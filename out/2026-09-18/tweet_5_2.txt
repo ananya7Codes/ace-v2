@@ -1,0 +1,3 @@
+The problem isn't that agents lack ability. It's that their decision-making is too random. When an AI's internal probability distributions are too spread out, slightly different conditions flip which answer it chooses, making reliable workflows impossible wit…
+
+#AI #Tech
