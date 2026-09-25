@@ -1,0 +1,3 @@
+The trick works by having a tiny 280-million-parameter model draft candidate answers while the main model checks them. On powerful data center GPUs, decoding speeds jumped up to 20x faster, though real-world improvements vary because image processing still ta…
+
+#AI #Tech

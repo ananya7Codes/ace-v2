@@ -1,0 +1,3 @@
+Higgsfield used GPT-6 Astra to handle the complex work of understanding video content and generating creative variations. This means smaller teams can compete with larger competitors by shipping new features at startup speed instead of enterprise timelines.
+
+#AI #Tech

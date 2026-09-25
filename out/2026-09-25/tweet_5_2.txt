@@ -1,0 +1,3 @@
+The breakthrough: you can now simulate up to 2,048 robot environments simultaneously on a GPU while keeping all the data close to the processor. This means faster iteration on robot learning and control, turning what used to take hours into minutes.
+
+#AI #Tech
