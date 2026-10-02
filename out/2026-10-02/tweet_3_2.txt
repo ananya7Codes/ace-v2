@@ -1,0 +1,3 @@
+In tests, the new system handled a 47-billion-parameter model 2.7 times faster than the previous version while keeping training costs roughly the same. By open-sourcing this infrastructure, the team is helping smaller labs and academic researchers access tool…
+
+#AI #Tech

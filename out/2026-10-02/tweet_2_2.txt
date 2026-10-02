@@ -1,0 +1,3 @@
+The system works by having a stronger AI teacher show what the weak agent is missing, then creates new training tasks that are actually doable, realistic to real work, and hard enough to matter. This makes training much more efficient than trying to fix every…
+
+#AI #Tech

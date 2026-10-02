@@ -1,0 +1,3 @@
+A new tool called AutoSynthData helps companies train AI agents to work better in their specific environments. Instead of using generic training data, it identifies where an agent fails and automatically generates realistic tasks to fix those exact weaknesses.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+Researchers just released Olmo-core 3, a new training system that makes it much cheaper and faster to build massive AI models. The innovation uses a "mixture of experts" approach where only parts of the model activate for each task, cutting computational cost…
+
+#AI #Tech
