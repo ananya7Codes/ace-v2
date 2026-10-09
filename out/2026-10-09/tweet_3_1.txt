@@ -1,0 +1,3 @@
+Jump Trading is using ChatGPT to help scale its quantitative research team. The AI handles routine analysis tasks across multiple data sources, while human traders review and validate the results before acting on them.
+
+#AI #Tech

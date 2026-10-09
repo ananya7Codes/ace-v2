@@ -1,0 +1,3 @@
+Someone used an AI assistant to build smaller, faster versions of expensive AI models by just describing what they wanted. In one week, they created six custom models for $16 total, each working better than expected and ready to use immediately.
+
+#AI #Tech

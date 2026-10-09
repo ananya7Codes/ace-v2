@@ -1,0 +1,3 @@
+The key was writing detailed prompts upfront. They set spending limits before work started, asked the AI to test baselines first, and ran small tests before full training. This kept costs down and ensured the final models actually improved on what existed bef…
+
+#AI #Tech

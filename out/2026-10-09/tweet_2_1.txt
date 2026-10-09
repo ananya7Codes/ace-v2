@@ -1,0 +1,3 @@
+AI2's research lab just overhauled how it allocates thousands of GPUs to 150 researchers. They ditched a priority-based system that bred chaos—like researchers parking dummy jobs to grab resources—and switched to transparent budgets with fair-share allocation…
+
+#AI #Tech
