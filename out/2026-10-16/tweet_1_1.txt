@@ -1,0 +1,3 @@
+Researchers released 2.8 trillion tokens of training data across 22 Indian languages, plus the open-source tools to generate more. This addresses a critical gap: Indian language AI models lag far behind English ones mainly because there isn't enough training …
+
+#AI #Tech

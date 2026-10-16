@@ -1,0 +1,3 @@
+Meta released Muse Spark Open, a massive new AI model that can understand text, images, audio, and video all at once. With 816 billion parameters, it's the most capable open-source model available in the US and is specifically built to help developers write, …
+
+#AI #Tech

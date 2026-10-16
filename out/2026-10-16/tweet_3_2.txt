@@ -1,0 +1,3 @@
+The clever part: these adapters share the same memory cache, so adding specialized decision-makers costs almost nothing extra. One version outperformed a competitor at a complex five-step task while using the same computing power as the base model alone.
+
+#AI #Tech

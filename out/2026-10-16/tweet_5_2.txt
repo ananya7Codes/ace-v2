@@ -1,0 +1,3 @@
+The distilled version generates a full 1024x1024 image in just 16 steps, making it fast enough to run locally. You can also pass multiple reference images and move specific parts around, or train custom styles using the open-source DreamBooth scripts included…
+
+#AI #Tech

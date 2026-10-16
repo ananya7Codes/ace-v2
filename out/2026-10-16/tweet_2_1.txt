@@ -1,0 +1,5 @@
+A new open AI model called Beam just launched that you can run on your own computers. It's massive—501 billion parameters—but designed to run efficiently, and it's free to use and customize under an open license. Great for coding and building AI agents.
+
+Beam…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+Black Forest Labs just released FLUX.3 Image Klein, a new AI image generator that works instantly in Diffusers. It creates images from text and can edit existing images. The big innovation: layout control lets you draw boxes in your prompt to position exactly…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+The clever part: while the model is huge, only 42 billion parameters activate for each task, making it fast to run despite its size. It can read screenshots, listen to voice notes, and watch screen recordings while coding, all using one unified interface.
+
+#AI #Tech

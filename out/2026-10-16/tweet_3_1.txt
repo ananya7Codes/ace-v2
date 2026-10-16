@@ -1,0 +1,3 @@
+IBM released Granite Switch 4.1, a new AI model that handles chat, decision-making, and speech recognition all from one system. It combines multiple capabilities using lightweight add-ons called adapters, letting you do more with fewer computers while keeping…
+
+#AI #Tech
