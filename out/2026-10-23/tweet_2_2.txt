@@ -1,0 +1,3 @@
+John Deere is an example. They needed to help 200,000 farmers use their precision spraying technology. OpenAI's FDE team built a system where farmers can ask questions in plain English and get personalized setup advice. When models fall short, the team feeds …
+
+#AI #Tech

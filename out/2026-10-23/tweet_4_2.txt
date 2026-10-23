@@ -1,0 +1,3 @@
+Developers can now access OpenAI's Codex—which writes and understands code—alongside Google's own AI tools. This means a single platform can handle everything from writing software to analyzing data, all in one place.
+
+#AI #Tech

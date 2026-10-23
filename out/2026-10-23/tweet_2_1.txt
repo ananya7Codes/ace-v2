@@ -1,0 +1,3 @@
+OpenAI just launched Forward Deployed Engineering to solve a real problem: AI models work great in labs but companies struggle to actually use them. The team embeds with customers to turn raw AI capability into solutions that work in messy real-world situatio…
+
+#AI #Tech

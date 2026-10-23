@@ -1,0 +1,3 @@
+The tool shows exactly what you need to install and which script to run. It even lets you skip compilation time by reusing graphs from previous tests, so you can start generating text right away instead of waiting for setup.
+
+#AI #Tech

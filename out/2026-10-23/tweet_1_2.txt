@@ -1,0 +1,3 @@
+The API handles three types of decisions: probability estimates, multiple-choice selections, and numeric scores. Teams inside OpenAI are already using it to speed up responses, categorize transactions, and analyze media coverage in real time.
+
+#AI #Tech

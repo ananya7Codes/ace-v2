@@ -1,0 +1,3 @@
+AWS built a tool to tell you which AI models work on their Trainium chips without needing code changes. Just search for your model and see if it runs, how fast it goes, and how much memory it needs. It's live now with the most popular models already tested.
+
+#AI #Tech

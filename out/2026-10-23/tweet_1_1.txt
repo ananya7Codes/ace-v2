@@ -1,0 +1,3 @@
+OpenAI just launched the Decisions API for all developers. It's a specialized tool that helps apps make quick, cheap choices—like routing requests or classifying data—up to 10x faster than their main AI model by focusing on questions with set answers.
+
+#AI #Tech
