@@ -1,0 +1,3 @@
+For example, employees could ask ChatGPT to handle HR requests or IT tickets directly, and the AI would execute those actions in ServiceNow behind the scenes. It's about making AI assistants actually do work, not just answer questions.
+
+#AI #Tech

@@ -1,0 +1,3 @@
+OpenAI and ServiceNow are deepening their partnership, bringing AI models into ServiceNow's business software while also letting ServiceNow workflows run inside ChatGPT. This means companies can automate more tasks without switching between different tools.
+
+#AI #Tech

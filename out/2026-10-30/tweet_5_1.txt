@@ -1,0 +1,3 @@
+IBM's new Granite Switch 4.1.1 lets you update AI models like software updates. The modular design means you can add new capabilities without retraining the whole system, making updates faster and cheaper to deploy.
+
+#AI #Tech

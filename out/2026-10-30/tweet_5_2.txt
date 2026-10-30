@@ -1,0 +1,3 @@
+Developers will soon be able to build their own adapters to customize these models, test features, and ship updates independently. This could transform how AI gets improved and deployed in the real world.
+
+#AI #Tech
