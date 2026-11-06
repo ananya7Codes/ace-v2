@@ -1,0 +1,3 @@
+Researchers just released ToyBlocks, a controlled simulation where robot arms learn to manipulate blocks on a tabletop. It's designed like a scientific petri dish for robotics—researchers can change training data, repeat tests, and figure out exactly why a ro…
+
+#AI #Tech

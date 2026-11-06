@@ -1,0 +1,3 @@
+The models work together in different ways: some predict what happens when a robot takes an action, others turn physics simulations into realistic video, and some generate synchronized camera and LiDAR data for driving scenarios. Researchers can now customize…
+
+#AI #Tech

@@ -1,0 +1,3 @@
+An engineer working on a circuit board can now describe what they need in plain English, and AI generates the technical designs. This isn't just about speed—it means fewer people need specialized training to do complex engineering work.
+
+#AI #Tech

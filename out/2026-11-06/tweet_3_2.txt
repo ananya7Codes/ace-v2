@@ -1,0 +1,3 @@
+The system automatically generates training demonstrations without needing humans to remotely control robots for hours. Researchers can experiment with different learning approaches, like testing whether a robot learns better with more pushing practice versus…
+
+#AI #Tech

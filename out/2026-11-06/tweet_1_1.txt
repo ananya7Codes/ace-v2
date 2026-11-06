@@ -1,0 +1,3 @@
+Merge is using OpenAI's latest AI tools to build new products and run its business. The company relies on GPT-6 Astra and ChatGPT for code review and marketing, showing how AI is becoming central to how companies operate internally.
+
+#AI #Tech

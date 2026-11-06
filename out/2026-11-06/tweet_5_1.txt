@@ -1,0 +1,3 @@
+NVIDIA released four new AI models that can simulate real-world environments for robots and self-driving cars. These open-source models can generate realistic video and sensor data across multiple viewpoints, helping researchers test autonomous systems withou…
+
+#AI #Tech
