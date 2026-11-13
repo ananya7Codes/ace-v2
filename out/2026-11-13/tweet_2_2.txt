@@ -1,0 +1,3 @@
+The software now supports over 150 different AI model types and works with chips from Nvidia, AMD, Intel, and others. This means the same tool can power AI features on everything from your phone to a data center.
+
+#AI #Tech

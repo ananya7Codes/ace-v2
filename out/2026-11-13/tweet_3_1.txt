@@ -1,0 +1,3 @@
+IBM researchers built LLMON, a new markup language designed specifically for how AI models actually work, replacing JSON formats that confuse smaller language models and create security vulnerabilities like prompt injection attacks.
+
+#AI #Tech

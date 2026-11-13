@@ -1,0 +1,3 @@
+AI software that lets you run powerful language models on your own computer just hit version 1.0. llama.cpp makes this possible across any hardware, from laptops to servers, while keeping your data private. The team is committing to stable updates so develope…
+
+#AI #Tech

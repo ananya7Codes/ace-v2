@@ -1,0 +1,3 @@
+Researchers just released a complete guide for fine-tuning TRELLIS.2, a powerful 3D generation model, on your own data. The guide includes ready-to-use scripts and containers that run locally or on Hugging Face, making it easier to customize 3D model generati…
+
+#AI #Tech

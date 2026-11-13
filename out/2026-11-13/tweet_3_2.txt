@@ -1,0 +1,3 @@
+LLMON uses special reserved tokens instead of regular characters like brackets and quotes, making structure explicit so models understand it clearly. Teams can convert their existing JSON data back and forth without losing information.
+
+#AI #Tech
