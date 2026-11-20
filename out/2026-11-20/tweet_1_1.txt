@@ -1,0 +1,3 @@
+OpenAI built a system called the Performance Factory that automatically finds and fixes speed problems in ChatGPT. It uses AI to spot slowdowns before they reach users, helping keep the app running smoothly as it handles millions of conversations daily.
+
+#AI #Tech

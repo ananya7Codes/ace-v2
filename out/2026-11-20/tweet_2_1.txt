@@ -1,0 +1,3 @@
+GitHub added automated security scanning to pull requests, letting developers spot vulnerabilities before code goes live. This catches problems early when they're cheaper and easier to fix, strengthening software security from the start.
+
+#AI #Tech

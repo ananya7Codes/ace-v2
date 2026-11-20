@@ -1,0 +1,3 @@
+The scan shows potential issues directly in the PR review process, so developers get real-time feedback on risky code patterns. Teams can approve or request changes without leaving their normal workflow, making security a natural part of coding instead of an …
+
+#AI #Tech
